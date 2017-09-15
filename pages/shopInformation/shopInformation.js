@@ -10,8 +10,8 @@ Page({
         total: '',
         foodlist: [],
         items: [
-            { name: 'USA', value: '在店吃' },
-            { name: 'CHN', value: '带走' },//checked: 'true'
+          { name: 'USA', value: '在店吃', checked: 0 },
+          { name: 'CHN', value: '自取', checked: 0 },//checked: 'true'
         ],
         informationList: [
             {
@@ -84,6 +84,28 @@ Page({
             total: total,
             foodlist: food,
         });
+    },
+
+    immediatelyPay: function() {
+      var info1 = this.data.items[0];
+      var info2 = this.data.items[1];
+      if (info1.checked == 0 && info2.checked == 0) {
+        wx.showModal({
+          title: '提示',
+          content: '请选择用餐方式“在店吃”或者“自取”',
+          showCancel: false,
+          success: function (res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
+          }
+        })
+        // wx.showToast({
+        //   title: '请选择用餐方式“在店吃”或者“自取”',
+        // })
+      }
     }
 
 

@@ -30,6 +30,6 @@
   </navigator>
   <view class="payMoney">
     <text class="paytext">待付金额: ￥{{total}}</text>
-    <button class="paybutton" size='mini' >支 付</button>
+    <button class="paybutton" bindtap='immediatelyPay' size='mini' >支 付</button>
   </view>
 </view>
