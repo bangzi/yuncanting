@@ -9,7 +9,7 @@
 
 swiper {
     width: 100%;
-    height: 500rpx;
+    height: 480rpx;
 }
 
 .weui_cell {

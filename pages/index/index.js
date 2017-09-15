@@ -4,8 +4,8 @@ var app = getApp();
 Page({
     data: {
       imgUrls: [
-        'http://rlty.oss-cn-beijing.aliyuncs.com/banner1%20.png',
-        'http://rlty.oss-cn-beijing.aliyuncs.com/banner3.png'
+        'http://rlty.oss-cn-beijing.aliyuncs.com/banner3.png',
+        'http://rlty.oss-cn-beijing.aliyuncs.com/banner1%20.png' 
         ],
         indicatorDots: true,
         vertical: false,
