@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/wode/wode",
+        "pages/shop/shop",
+        "pages/shopInformation/shopInformation",
+        "pages/remark/remark",
+        "pages/ordermenu/ordermenu",
+        "pages/fooddocument/fooddocument",
+        "pages/orderlist/orderlist"
+            
+    ],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "演示",
+        "navigationBarBackgroundColor": "#FC962B",
+        "backgroundColor": "#fbf9fe"
+    },
+    "tabBar": {
+        "color": "#929292",
+        "backgroundColor": "#ffffff",
+        "selectedColor": "#FC962B",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "image/unhome.png",
+                "selectedIconPath": "image/home.png"
+            },
+            {
+                "pagePath": "pages/orderlist/orderlist",
+                "text": "订单",
+                "iconPath": "image/unorder.png",
+                "selectedIconPath": "image/order.png"
+            },
+            {
+                "pagePath": "pages/wode/wode",
+                "text": "商家",
+                "iconPath": "image/unme.png",
+                "selectedIconPath": "image/me.png"
+            }
+        ]
+    }
+}

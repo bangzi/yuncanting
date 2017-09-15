@@ -1,0 +1,21 @@
+<!--pages/orderlist/orderlist.wxml-->
+<view class='conmentview'>
+    <scroll-view class='orderConment' wx:for="{{orderlist}}">
+        <navigator class='orderdetails' url='../../pages/ordermenu/ordermenu'>
+            <view class='inshop'>
+                <text class='where'>{{item.inshop}}</text>
+                <text class='payState'>已完成</text>
+            </view>
+            <view class='information'>
+                <!-- <image class='foodimage'>{{item.imageUrl}}</image> -->
+                <view class='foodname'>
+                    <text>{{item.foodname}}</text>
+                    <text class='foodnum'>x{{item.foodnum}}</text>
+                </view>
+                <text class='counttotal'>实付￥：{{item.count}}</text>
+            </view>
+        </navigator>
+
+
+    </scroll-view>
+</view>

@@ -1,0 +1,21 @@
+<view class="personal_info">
+  <view class="photo_wrap">
+    <image src="{{userInfo.avatarUrl}}" class="photo"></image>
+  </view>
+  <view class="nickname">
+    {{userInfo.nickName}}
+  </view>
+</view>
+<view class="addess" bindtap="mapaddess">
+  <image class="images" src="../../image/address.png"></image>
+  <text class="sellertext">北京海淀区上庄镇馨悦家园</text>
+</view>
+<view class="phonenumber" bindtap="callphone">
+  <image class="images" src="../../image/phone.png"></image>
+  <text class="sellertext">13716772765</text>
+</view>
+<view class="foodsafe" bindtap='checkdocument'>
+  <image class="images" src="../../image/archives.png"></image>
+  <text class="sellertext">食品安全档案</text>
+</view>
+<!-- <view class="wode_out">退出</view> -->

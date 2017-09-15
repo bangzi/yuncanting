@@ -1,0 +1,48 @@
+<view class="maincontent">
+  <!-- <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group> -->
+  <view class="content-container">
+    <scroll-view class="goods-container" scroll-y="true" >
+      <view class="menu" wx:for="{{informationList}}">
+        <view class="head">
+          <image class="img" mode="aspectFill" src="{{item.foodImageUrl}}" />
+          <view class="text">
+            <text class="title">{{item.foodName}}</text>
+            <text class="subtitle">x{{item.num}}</text>
+          </view>
+          <view class="count">
+            <text>¥{{item.price *item.num}}</text>
+          </view>
+        </view>
+        <!-- <view class="bottomLine"></view> -->
+      </view>
+    </scroll-view>
+  </view>
+  <!-- <view class="weui-cells">
+    <view class="weui-cell__hd">
+      <view class="weui-label">预计到达时间:</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="timeChange">
+         <view class="weui-input">{{reachtime}}</view> 
+      </picker>
+    </view>
+  </view> -->
+  <view class="payMode">
+    <text class="paystytle">用餐方式:</text>
+    <text class="onlinepay">店内用餐</text> 
+  </view>
+  <view class="orderTimeView">
+    <text class="orderTime">订单时间:2017.9.15 7:30</text>
+  </view>
+  <!-- <navigator class="taste" url="../../pages/remark/remark">
+    <text>备注：</text>
+  </navigator> -->
+  <view class="payMoney">
+    <text class="paytext">已支付: ¥548</text>
+    <!-- <button class="paybutton"  size="mini">支付</button> -->
+  </view>
+</view>
