@@ -29,8 +29,8 @@ App({
                   data: {
                     openid: res.data.openid,
                     sessionkey: res.data.sessionkey,
-                    trdsession: res.data.trdsession,
-                    userid: res.data.userid
+                    
+                    // userid: res.data.userid
                   }
                 })
             },
