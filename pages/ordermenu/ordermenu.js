@@ -70,15 +70,23 @@ Page({
   },
 
   onLoad: function (options) {
-    wx.getSystemInfo({
-      success: function (res) {
-        console.log(res.model)
-        console.log(res.pixelRatio)
-        console.log(res.windowWidth)
-        console.log(res.windowHeight)
-        console.log(res.language)
-        console.log(res.version)
-      }
+      console.log(options)
+    // wx.getSystemInfo({
+    //   success: function (res) {
+    //     console.log(res.model)
+    //     console.log(res.pixelRatio)
+    //     console.log(res.windowWidth)
+    //     console.log(res.windowHeight)
+    //     console.log(res.language)
+    //     console.log(res.version)
+    //   }
+    // })
+      var navigationname = options.navigationbarName + '订单'
+    wx.setNavigationBarTitle({
+        title: navigationname,
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
     })
   },
   radioChange: function (e) {

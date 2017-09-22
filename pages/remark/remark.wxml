@@ -1,10 +1,22 @@
 <!--pages/remark/remark.wxml-->
 <view class="feedback-view">
-  <form bindsubmit="bindFormSubmit">
-    <text class="describe-title">描述：</text>
-    <textarea class="describe-info"  placeholder="请输入具体描述信息" maxlength="-1"  name="describe" />
-    <!-- <text class="mail-title">联系方式:</text>
+    <form bindsubmit="bindFormSubmit">
+        <text class="describe-title">口味、偏好：</text>
+        <textarea class="describe-info" placeholder="请输入口味、偏好信息" maxlength="-1" name="describe" value='{{test}}'/>
+        <!-- <text class="mail-title">联系方式:</text>
     <textarea class="mail-info"  placeholder="请输入您的邮箱" maxlength="35" name="mail"/> -->
-    <button class="submit"form-type="submit"> 提交 </button>
-  </form>
+    <!-- 口味标签选择 -->
+        <!-- <view >
+            <button class="tasteButton" size='mini' id='0' bindtap='addtates'>{{tasteList[0]}}</button>
+            <button class="tasteButton" size='mini' id='1' bindtap='addtates'>{{tasteList[1]}}</button>
+            <button class="tasteButton" size='mini' id='2' bindtap='addtates'>{{tasteList[2]}}</button>
+            <button class="tasteButton" size='mini' id='3' bindtap='addtates'>{{tasteList[3]}}</button>
+            <button class="tasteButton" size='mini' id='4' bindtap='addtates'>{{tasteList[4]}}</button>
+        </view> -->
+
+
+
+        <button class="submit" form-type="submit" id='button' value='bb' >完成</button>
+
+    </form>
 </view>

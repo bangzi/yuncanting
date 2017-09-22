@@ -1,5 +1,5 @@
 <!--pages/fooddocument/fooddocument.wxml-->
 <view class='foodsafeimage'>
 <image src='http://rlty.oss-cn-beijing.aliyuncs.com/xukezheng.jpg'></image>
-<!-- <image src='http://rlty.oss-cn-beijing.aliyuncs.com/%E5%AD%94%E5%BC%8F%E9%85%B1%E6%A3%92%E9%AA%A848%E5%85%83.jpg'></image> -->
+
 </view>

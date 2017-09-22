@@ -1,22 +1,28 @@
 /* pages/remark/remark.wxss */
+
 .describe-title {
-  display: flex;
-  height: 50rpx;
-  size: 10px;
-  margin-top: 10px;
-  margin-left: 5px;
+    display: flex;
+    height: 50rpx;
+    size: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .describe-info {
-  /*right: 5px;*/
-  height: 200px;
-  width: 100%;
-  background-color: cornsilk;
-   border:  2rpx solid gainsboro;/*边框设计*/
-   padding-top:4px;/*输入内容调整位置*/
-   
+    /*right: 5px;*/
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    border: 2rpx solid gainsboro; /*边框设计*/
+    padding: 4px; /*输入内容调整位置*/
 }
 
+
+
+/* .tatesButton{
+    margin: 10rpx;
+} */
 /* .mail-title {
   display: flex;
   height: 10px;
@@ -34,7 +40,7 @@
 } */
 
 .submit {
-  margin-top:30px;
-  width: 30%;
-  background-color:lightgreen;
+    margin-top: 30px;
+    width: 30%;
+    background-color: lightgreen;
 }

@@ -19,7 +19,7 @@
 
 .inshop .where {
     font-size: 20px;
-    color: #444444;
+    color: #444;
     margin-top: 10rpx;
     margin-left: 10px;
 }
@@ -28,7 +28,7 @@
     padding: 10rpx;
     /* border: 1px solid #dadada; */
     font-size: 20px;
-    color: #444444;
+    color: #444;
 }
 
 .information {
@@ -38,17 +38,18 @@
 .information .foodname {
     display: flex;
     justify-content: space-between;
-    color: #444444;
-     margin-left: 4px; 
+    color: #444;
+    margin-left: 4px;
 }
 
 .foodname .foodnum {
     margin-left: 15px;
-    color: #444444;
+    color: #444;
 }
+
 .counttotal {
     display: flex;
     margin-top: 15px;
     justify-content: flex-end;
-    color: #444444;
+    color: #444;
 }

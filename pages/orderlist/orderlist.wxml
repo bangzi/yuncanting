@@ -1,7 +1,7 @@
 <!--pages/orderlist/orderlist.wxml-->
 <view class='conmentview'>
     <scroll-view class='orderConment' wx:for="{{orderlist}}">
-        <navigator class='orderdetails' url='../../pages/ordermenu/ordermenu'>
+        <navigator class='orderdetails' url='../../pages/ordermenu/ordermenu?navigationbarName={{item.inshop}}'>
             <view class='inshop'>
                 <text class='where'>{{item.inshop}}</text>
                 <text class='payState'>已完成</text>

@@ -1,6 +1,6 @@
 /* pages/shopInformation/shopInformation.wxss */
 
-.weui-cells, .payMode, .taste, .payMoney, .orderTimeView {
+.payMode, .taste {
     display: flex;
     padding: 10rpx;
     height: 70rpx;
@@ -9,27 +9,46 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #dadada;
+    color: #444444;
+}
+
+.payMoney {
+    display: flex;
+    padding: 10rpx;
+    height: 120rpx;
+    flex-direction: row;
+    /* margin-bottom: 0rpx; */
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
 }
 
 .maincontent {
-    height: 80%;
+    margin-bottom: 120rpx;
 }
+
+/* 选择在店吃还是带走 */
 
 .radio-group {
     display: flex;
+    height: 120rpx;
     justify-content: space-between;
+    align-items: center;
+    color: #444444;
 }
 
 .radio {
     padding: 10rpx;
-    height: 60rpx;
+    /* width: 250rpx; */
+    font-size: 18px;
     margin-left: 50rpx;
     margin-right: 50rpx;
 }
 
-.maincontent .content-container {
+/* .maincontent .content-container {
     height: 90%;
-}
+} */
 
 ::-webkit-scrollbar {
     width: 0rpx;
@@ -47,15 +66,38 @@
     border-top: 1px solid #dadada;
 }
 
-.payMode .onlinepay, .weui-input {
+.payMode .onlinepay {
     margin-right: 10rpx;
-    color: #444;
+    color: #444444;
     font-size: 16px;
 }
 
+.reachtime  picker {
+    width: 100%;
+}
+
+.reachtime  picker .pickertime {
+    /* margin-right: 10rpx; *//* color: #444; */
+    display: flex;
+    font-size: 16px;
+    /* background-color: blanchedalmond; */
+     padding: 20rpx;
+      border-top: 1px solid #dadada;
+    justify-content: space-around;
+     color: #444444;
+
+}
+
 .paybutton {
+    display: flex;
+    height: 80rpx;
+    width: 200rpx;
     margin-right: 10rpx;
+    align-items: center;
+    justify-content: center;
     background-color: darkorange;
+    font-size: 18px;
+    color: #444444;
 }
 
 .head {
@@ -74,27 +116,25 @@
     border-radius: 5%;
 }
 
-.paytext, .orderTime {
+.paytext {
     width: 500rpx;
-    color: #444;
+    color: #444444;
     font-size: 16px;
 }
 
 .text {
-    
     position: relative;
     padding: 20rpx 30rpx;
     font-size: 36rpx;
     line-height: 40rpx;
-    border-bottom: 1px solid #f7f7f7;
+    /* border-bottom: 1px solid #f7f7f7; */
+     color: #444444;
 }
 
 .title {
     margin-top: 10rpx;
-    font-size: 36rpx;
-    line-height: 46rpx;
-    color: #444;
-   
+    font-size: 18px;
+    color: #444444;
 }
 
 .subtitle {
@@ -105,5 +145,5 @@
 .count {
     margin-left: auto;
     margin-right: 20rpx;
-    color: #444;
+    color: #444444;
 }

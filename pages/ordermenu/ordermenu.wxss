@@ -27,9 +27,9 @@
     margin-right: 50rpx;
 }
 
-.maincontent .content-container {
+/* .maincontent .content-container {
     height: 90%;
-}
+} */
 
 ::-webkit-scrollbar {
     width: 0rpx;
@@ -81,12 +81,14 @@
 }
 
 .text {
-    height: 120rpx;
+
     display: flex;
     flex-direction: column;
-    margin-left: 30rpx;
-
-    width: 250rpx;
+    position: relative;
+    padding: 20rpx;
+    font-size: 36rpx;
+    line-height: 40rpx;
+    /* border-bottom: 1px solid #f7f7f7; */
 }
 
 .title {
@@ -96,11 +98,13 @@
 }
 
 .subtitle {
+    margin-top: 10rpx;
     font-size: 16px;
     color: #999;
 }
 
 .count {
-    /* margin-left: 280rpx; */
+    margin-left: auto;
+    margin-right: 20rpx;
     color: #444;
 }

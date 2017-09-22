@@ -1,35 +1,44 @@
 <view class="maincontent">
-  <radio-group class="radio-group" bindchange="radioChange">
-    <label class="radio" wx:for="{{items}}">
-      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-    </label>
-  </radio-group>
-  <view class="content-container">
-    <scroll-view class="goods-container" scroll-y="true" >
-      <view class="menu" wx:for="{{foodlist}}">
-        <view class="head">
-          <image class="img" mode="aspectFill" src="{{item.pic}}" />
-          <view class="text">
-            <view class="title ellipsis">{{item.name}}</view>
-            <text class="subtitle">x{{item.num}}</text>
-          </view>
-          <view class="count">
-            <text>¥{{item.price *item.num}}</text>
-          </view>
-        </view>
-        <!-- <view class="bottomLine"></view> -->
-      </view>
-    </scroll-view>
-  </view>
-  <view class="payMode">
-    <text class="paystytle">支付方式:</text>
-    <text class="onlinepay">微信支付</text>
-  </view>
-  <navigator class="taste" url="../../pages/remark/remark">
-    <text class="tasetContent">备注:口味要求</text>
-  </navigator>
-  <view class="payMoney">
-    <text class="paytext">待付金额: ￥{{total}}</text>
-    <button class="paybutton" bindtap='immediatelyPay' size='mini' >支 付</button>
-  </view>
+    <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:key='{{items.name}}' wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+    </radio-group>
+    <view class="content-container">
+        <scroll-view class="goods-container" scroll-y="true">
+            <view class="menu" wx:key = '{{foodlist.id}}'wx:for="{{foodlist}}">
+                <view class="head">
+                    <image class="img" mode="aspectFill" src="{{item.pic}}" />
+                    <view class="text">
+                        <view class="title ellipsis">{{item.name}}</view>
+                        <text class="subtitle">x{{item.num}}</text>
+                    </view>
+                    <view class="count">
+                        <text>¥{{item.price * item.num}}</text>
+                    </view>
+                </view>
+                <!-- <view class="bottomLine"></view> -->
+            </view>
+        </scroll-view>
+    </view>
+    <view class="reachtime" hidden="{{!isinshop}}">
+        <!-- <view class="reachtimelabel">预计到达时间:</view>  -->
+
+        <picker mode="time" value="{{time}}" start="{{reachtime}}" end="21:01" bindchange="timeChange">
+            <!-- <text class="reachtimelabel">预计到达时间:</text> -->
+            <view class="pickertime">预计到店时间:  {{reachtime}}</view>
+        </picker>
+
+    </view>
+    <view class="payMode">
+        <text class="paystytle">支付方式:</text>
+        <text class="onlinepay">微信支付</text>
+    </view>
+    <navigator class="taste" url="../../pages/remark/remark">
+        <text class="tasetContent">备注口味：</text>
+    </navigator>
+    <view class="payMoney">
+        <text class="paytext">待付金额: ￥{{total}}</text>
+        <button class="paybutton" bindtap='payment'>支付</button>
+    </view>
 </view>

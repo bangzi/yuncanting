@@ -40,7 +40,27 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    
+    wx.request({
+        url:'' ,
+        data:{
+
+        } ,
+        header: {
+            'content-type': 'application/json'
+        },
+        method: 'POST',
+        //dataType: json,
+        success: function(res) {
+
+        },
+        fail: function(res) {
+
+        },
+        complete: function(res) {
+
+        },
+    })
   },
 
   /**
@@ -61,7 +81,20 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    wx.request({
+        url: '',
+        data:{
+
+        } ,
+        header: { 
+            'content-type': 'application/json'
+            },
+        method: POST,
+        // dataType: json,
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+    })
   },
 
   /**
@@ -75,6 +108,16 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+      return {
+          title: '西马坊大食堂',
+          path: '/pages/orderlist/orderlist',
+          success: function (res) {
+              // 转发成功
+              console.log('转发ok');
+          },
+          fail: function (res) {
+              // 转发失败
+          }
+      }
   }
 })

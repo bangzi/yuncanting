@@ -12,7 +12,7 @@
 </view>
 <view class="phonenumber" bindtap="callphone">
   <image class="images" src="../../image/phone.png"></image>
-  <text class="sellertext">13716772765</text>
+  <text class="sellertext">{{phoneNumber}}</text>
 </view>
 <view class="foodsafe" bindtap='checkdocument'>
   <image class="images" src="../../image/archives.png"></image>

@@ -1,5 +1,9 @@
 // pages/fooddocument/fooddocument.js
+
+
 Page({
+
+    
 
   /**
    * 页面的初始数据

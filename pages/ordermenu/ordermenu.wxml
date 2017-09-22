@@ -21,7 +21,7 @@
       </view>
     </scroll-view>
   </view>
-  <!-- <view class="weui-cells">
+   <!-- <view class="weui-cells">
     <view class="weui-cell__hd">
       <view class="weui-label">预计到达时间:</view>
     </view>
@@ -30,7 +30,7 @@
          <view class="weui-input">{{reachtime}}</view> 
       </picker>
     </view>
-  </view> -->
+  </view>  -->
   <view class="payMode">
     <text class="paystytle">用餐方式:</text>
     <text class="onlinepay">店内用餐</text> 
