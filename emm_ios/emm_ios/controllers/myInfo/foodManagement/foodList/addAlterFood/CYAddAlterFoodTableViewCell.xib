@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CYAddAlterFoodTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb6-y6-lvl">
+                        <rect key="frame" x="28" y="11.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="O1x-T8-2Me"/>
+                            <constraint firstAttribute="height" constant="20" id="v4N-kn-CjN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kq1-3h-boh">
+                        <rect key="frame" x="98" y="7" width="194" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4sK-qw-Qer"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kq1-3h-boh" firstAttribute="leading" secondItem="gb6-y6-lvl" secondAttribute="trailing" constant="10" id="8Ku-5W-FcS"/>
+                    <constraint firstItem="gb6-y6-lvl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="bKj-mu-TbW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kq1-3h-boh" secondAttribute="trailing" constant="20" id="dBe-Ga-wsY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="kq1-3h-boh" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="QOO-ST-HzX"/>
+                <constraint firstItem="gb6-y6-lvl" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="kXz-VY-Ezu"/>
+            </constraints>
+            <connections>
+                <outlet property="foodInfoLable" destination="gb6-y6-lvl" id="SWs-yJ-aCE"/>
+                <outlet property="foodInfoTextFiled" destination="kq1-3h-boh" id="K7G-ty-gOk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

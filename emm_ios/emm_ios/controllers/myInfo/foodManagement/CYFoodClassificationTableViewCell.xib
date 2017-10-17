@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="CYFoodClassificationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日特色" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="985-Ie-xBv">
+                        <rect key="frame" x="23" y="18" width="70" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="KDr-dI-Nhx"/>
+                            <constraint firstAttribute="width" constant="70" id="sLS-JG-Rau"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="content_icon01_" translatesAutoresizingMaskIntoConstraints="NO" id="GWG-kI-TKC">
+                        <rect key="frame" x="314" y="21" width="10" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="7FM-rv-sDa"/>
+                            <constraint firstAttribute="width" constant="10" id="JKs-Da-Q3Q"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93l-I7-WpK">
+                        <rect key="frame" x="18" y="57" width="311" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vyC-NK-5Mb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GWG-kI-TKC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="7L7-u3-hgy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="985-Ie-xBv" secondAttribute="bottom" constant="12" id="BIt-tc-9K1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="985-Ie-xBv" secondAttribute="bottom" constant="7.5" id="HMQ-pM-1Xp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="93l-I7-WpK" secondAttribute="bottom" constant="-8" id="KSP-4u-wQK"/>
+                    <constraint firstItem="985-Ie-xBv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-52" id="KnI-z4-TIY"/>
+                    <constraint firstItem="985-Ie-xBv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="R4V-hi-l5d"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="985-Ie-xBv" secondAttribute="bottom" constant="12.5" id="R9h-aP-O2n"/>
+                    <constraint firstItem="985-Ie-xBv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="SPk-Lh-73H"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="985-Ie-xBv" secondAttribute="bottom" constant="10" id="YzO-DL-z9G"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="985-Ie-xBv" secondAttribute="bottom" constant="10" id="cPM-cD-ynt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="93l-I7-WpK" secondAttribute="trailing" constant="10" id="eDb-HG-fSy"/>
+                    <constraint firstItem="93l-I7-WpK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="gI9-W3-E8n"/>
+                    <constraint firstItem="GWG-kI-TKC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hhf-mg-Owl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GWG-kI-TKC" secondAttribute="trailing" constant="15" id="tgm-P6-LnX"/>
+                    <constraint firstItem="985-Ie-xBv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="uq1-l2-Vfo"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BIt-tc-9K1"/>
+                        <exclude reference="HMQ-pM-1Xp"/>
+                        <exclude reference="KnI-z4-TIY"/>
+                        <exclude reference="R9h-aP-O2n"/>
+                        <exclude reference="SPk-Lh-73H"/>
+                        <exclude reference="YzO-DL-z9G"/>
+                        <exclude reference="cPM-cD-ynt"/>
+                        <exclude reference="7L7-u3-hgy"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="985-Ie-xBv" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="TNU-Mb-LOQ"/>
+                <constraint firstItem="GWG-kI-TKC" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="oPE-g6-02W"/>
+                <constraint firstItem="985-Ie-xBv" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="q3O-jV-M0B"/>
+                <constraint firstItem="985-Ie-xBv" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="ssi-D0-4lY"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="q3O-jV-M0B"/>
+                    <exclude reference="ssi-D0-4lY"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="foodClassLable" destination="985-Ie-xBv" id="i77-2h-x84"/>
+            </connections>
+            <point key="canvasLocation" x="307.5" y="261.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="content_icon01_" width="10" height="17"/>
+    </resources>
+</document>

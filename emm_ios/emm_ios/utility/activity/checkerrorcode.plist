@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>5</key>
+	<string>设置-&gt;通用-&gt;描述文件与设备管理 卸载profile文件后，重新登录</string>
+	<key>4</key>
+	<string>用户名错误，用户名不能为空</string>
+	<key>-1</key>
+	<string>提示</string>
+	<key>3</key>
+	<string>网络错误，请检查网络设置</string>
+	<key>2</key>
+	<string>密码至少为6位</string>
+	<key>1</key>
+	<string>用户名错误，请检查用户名</string>
+	<key>0</key>
+	<string>公司标示号非法</string>
+</dict>
+</plist>

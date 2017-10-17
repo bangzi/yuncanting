@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="54" id="KGk-i7-Jjw" customClass="UUMyInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我的设备" translatesAutoresizingMaskIntoConstraints="NO" id="5IS-qZ-kPx">
+                        <rect key="frame" x="18" y="8" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="JLD-0N-J3r"/>
+                            <constraint firstAttribute="height" constant="30" id="Ovn-HF-kP5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联机打印机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k3-qB-9WQ" userLabel="MyinfoCellLabel">
+                        <rect key="frame" x="58" y="13.5" width="244" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iA-QT-aWS">
+                        <rect key="frame" x="8" y="55" width="304" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="XQW-xb-OPF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7k3-qB-9WQ" firstAttribute="leading" secondItem="5IS-qZ-kPx" secondAttribute="trailing" constant="10" id="6Do-VQ-xcY"/>
+                    <constraint firstItem="7k3-qB-9WQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="6eC-Fa-TgE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7k3-qB-9WQ" secondAttribute="bottom" constant="3" id="6yr-aa-Ohm"/>
+                    <constraint firstItem="3iA-QT-aWS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="D7K-8Y-L8p"/>
+                    <constraint firstItem="5IS-qZ-kPx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="PKN-2W-i7j"/>
+                    <constraint firstItem="7k3-qB-9WQ" firstAttribute="top" secondItem="5IS-qZ-kPx" secondAttribute="top" constant="5" id="Sm5-S8-4tW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3iA-QT-aWS" secondAttribute="bottom" constant="-10" id="bcH-M4-UHi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3iA-QT-aWS" secondAttribute="trailing" id="rmP-PC-WIS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7k3-qB-9WQ" secondAttribute="trailing" constant="10" id="sKx-oE-2IS"/>
+                    <constraint firstItem="5IS-qZ-kPx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="vK5-YB-1vM"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6eC-Fa-TgE"/>
+                        <exclude reference="6yr-aa-Ohm"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MyinfoCellLabel" destination="7k3-qB-9WQ" id="Ba4-Do-p4J"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="261"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="我的设备" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>uuidRequest</key>
+	<string>UUUDIDRequest</string>
+	<key>enrollRequest</key>
+	<string>UUEnrollRequest</string>
+	<key>loginRequest</key>
+	<string>UULoginRequest</string>
+	<key>registerDevice</key>
+	<string>UURegisterRequest</string>
+	<key>versionupdate</key>
+	<string>UURequestVersionUpdate</string>
+	<key>feedback</key>
+	<string>UURequestFeedBack</string>
+	<key>test</key>
+	<string>UURequestTest</string>
+	<key>myapp</key>
+	<string>UURequestMyApp</string>
+	<key>appstore</key>
+	<string>UURequestAppList</string>
+	<key>appdetail</key>
+	<string>UURequestAppDetail</string>
+	<key>appRule</key>
+	<string>UURequestAppRule</string>
+	<key>locationUpdate</key>
+	<string>UURequestLocationUpdate</string>
+	<key>devUpdate</key>
+	<string>UURequestDevUpdate</string>
+	<key>cmdReport</key>
+	<string>UURequestCMDReport</string>
+	<key>login</key>
+	<string>UURequestLogin</string>
+</dict>
+</plist>

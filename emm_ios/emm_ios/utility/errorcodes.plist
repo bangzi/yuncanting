@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<string>未知错误</string>
+	<key>-1</key>
+	<string>服务器内部错误</string>
+	<key>-2</key>
+	<string>无效的token</string>
+	<key>-3</key>
+	<string>公司标识号非法</string>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="UUAppDescribe" representedClassName="UUAppDescribe" syncable="YES">
+        <attribute name="appDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appIconPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appPkgName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appRebuildFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appSort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appUserConfig" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appVersionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="catId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cmdUuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isInstall" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UUNotification" representedClassName="UUNotification" syncable="YES">
+        <attribute name="messageBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="messageMSG" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageReaded" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="messageSoundName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UUAppDescribe" positionX="-54" positionY="45" width="128" height="240"/>
+        <element name="UUNotification" positionX="-63" positionY="-18" width="128" height="150"/>
+    </elements>
+</model>
