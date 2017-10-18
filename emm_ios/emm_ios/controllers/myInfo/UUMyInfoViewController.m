@@ -9,6 +9,7 @@
 #import "UUMyInfoViewController.h"
 #import "UUMyInfoTableViewCell.h"
 #import "CYFoodClassificationViewController.h"
+#import "CYTimeManagementViewController.h"
 
 @interface UUMyInfoViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -60,9 +61,18 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    CYFoodClassificationViewController *tempFoodClass = [[CYFoodClassificationViewController alloc]init];
-    [tempFoodClass setHidesBottomBarWhenPushed:YES];
-    [self.navigationController pushViewController:tempFoodClass animated:nil];
+    NSLog(@"%ld",(long)indexPath.row);
+    if (indexPath.row == 1) {
+        CYTimeManagementViewController *tempTimeManagent =[[CYTimeManagementViewController alloc]init];
+        [self.navigationController pushViewController:tempTimeManagent animated:nil];
+    }else if(indexPath.row ==2){
+        CYFoodClassificationViewController *tempFoodClass = [[CYFoodClassificationViewController alloc]init];
+        [tempFoodClass setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:tempFoodClass animated:nil];
+    }else{
+        NSLog(@"连接打印机");
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

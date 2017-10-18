@@ -95,6 +95,8 @@
 		B7B9D08A1F94906700ACBB59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B9D0891F94906700ACBB59 /* UIKit.framework */; };
 		B7B9D08C1F94907A00ACBB59 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B9D08B1F94907A00ACBB59 /* Security.framework */; };
 		B7B9D0901F9490E200ACBB59 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B9D08F1F9490E200ACBB59 /* libresolv.tbd */; };
+		B7B9D0941F96ECF800ACBB59 /* CYTimeManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B9D0921F96ECF800ACBB59 /* CYTimeManagementViewController.m */; };
+		B7B9D0971F96FEBC00ACBB59 /* CYTimeManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B9D0961F96FEBC00ACBB59 /* CYTimeManagementViewController.xib */; };
 		B7C117E41F5A48EA0003D1D8 /* UUMyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C117E31F5A48EA0003D1D8 /* UUMyInfoViewController.xib */; };
 		B7C2DF421F75F55100F0C7F8 /* CYFoodClassificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C2DF3D1F75F55100F0C7F8 /* CYFoodClassificationTableViewCell.m */; };
 		B7C2DF431F75F55100F0C7F8 /* CYFoodClassificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C2DF3E1F75F55100F0C7F8 /* CYFoodClassificationTableViewCell.xib */; };
@@ -411,6 +413,9 @@
 		B7B9D08B1F94907A00ACBB59 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B7B9D08D1F9490AD00ACBB59 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B7B9D08F1F9490E200ACBB59 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B7B9D0911F96ECF800ACBB59 /* CYTimeManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTimeManagementViewController.h; sourceTree = "<group>"; };
+		B7B9D0921F96ECF800ACBB59 /* CYTimeManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTimeManagementViewController.m; sourceTree = "<group>"; };
+		B7B9D0961F96FEBC00ACBB59 /* CYTimeManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CYTimeManagementViewController.xib; path = emm_ios/controllers/myInfo/foodManagement/CYTimeManagementViewController.xib; sourceTree = SOURCE_ROOT; };
 		B7C117E31F5A48EA0003D1D8 /* UUMyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UUMyInfoViewController.xib; sourceTree = "<group>"; };
 		B7C2DF3C1F75F55100F0C7F8 /* CYFoodClassificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFoodClassificationTableViewCell.h; sourceTree = "<group>"; };
 		B7C2DF3D1F75F55100F0C7F8 /* CYFoodClassificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFoodClassificationTableViewCell.m; sourceTree = "<group>"; };
@@ -1003,6 +1008,9 @@
 				B7C2DF3F1F75F55100F0C7F8 /* CYFoodClassificationViewController.h */,
 				B7C2DF401F75F55100F0C7F8 /* CYFoodClassificationViewController.m */,
 				B7C2DF411F75F55100F0C7F8 /* CYFoodClassificationViewController.xib */,
+				B7B9D0911F96ECF800ACBB59 /* CYTimeManagementViewController.h */,
+				B7B9D0921F96ECF800ACBB59 /* CYTimeManagementViewController.m */,
+				B7B9D0961F96FEBC00ACBB59 /* CYTimeManagementViewController.xib */,
 			);
 			path = foodManagement;
 			sourceTree = "<group>";
@@ -1683,6 +1691,7 @@
 				86CDDC7E1CA517B100F84FC8 /* Assets.xcassets in Resources */,
 				B7C2DF681F77A1ED00F0C7F8 /* CYAddAlterFoodTableViewCell.xib in Resources */,
 				716271881F542F0300C856F3 /* UULoginViewController.xib in Resources */,
+				B7B9D0971F96FEBC00ACBB59 /* CYTimeManagementViewController.xib in Resources */,
 				B7C117E41F5A48EA0003D1D8 /* UUMyInfoViewController.xib in Resources */,
 				B7C2DF451F75F55100F0C7F8 /* CYFoodClassificationViewController.xib in Resources */,
 				C8748C451CE033E4004125DB /* certest.mine in Resources */,
@@ -1873,6 +1882,7 @@
 				E22DD50B1CBB973C00C1F40E /* OpenUDID.m in Sources */,
 				E2949DCD1CC0C72B00F1865C /* SSJailbreakCheck.m in Sources */,
 				E22DD5071CBB973C00C1F40E /* UURequestAppList.m in Sources */,
+				B7B9D0941F96ECF800ACBB59 /* CYTimeManagementViewController.m in Sources */,
 				E2949DCA1CC0C72B00F1865C /* SSCarrierInfo.m in Sources */,
 				E29894B31CDC4A02003B4DB6 /* UUProjectInfo.m in Sources */,
 				E2EDEA7C1CB49E6300BDFBF9 /* JSONModelClassProperty.m in Sources */,
