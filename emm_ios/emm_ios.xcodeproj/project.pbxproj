@@ -2053,9 +2053,9 @@
 				CODE_SIGN_ENTITLEMENTS = emm_ios/emm_ios.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhibo wu (8LETU6K55H)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				DEVELOPMENT_TEAM = 58YETL692J;
 				INFOPLIST_FILE = emm_ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2063,8 +2063,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.exp.cygj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4bb6fd5a-6d4a-49af-8ae1-2c35287d52fb";
-				PROVISIONING_PROFILE_SPECIFIER = "emm client";
+				PROVISIONING_PROFILE = "7ca18ac2-65b8-4254-a3e6-739107b18041";
+				PROVISIONING_PROFILE_SPECIFIER = "CYGJ Development";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2075,10 +2076,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = emm_ios/emm_ios.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhibo wu (8LETU6K55H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 56MY3ZN5V7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 58YETL692J;
 				INFOPLIST_FILE = emm_ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2086,8 +2087,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.exp.cygj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4bb6fd5a-6d4a-49af-8ae1-2c35287d52fb";
-				PROVISIONING_PROFILE_SPECIFIER = "emm client distribution profile";
+				PROVISIONING_PROFILE = "c7f538cb-4cad-495c-8f5d-4a886c096cd5";
+				PROVISIONING_PROFILE_SPECIFIER = "CYGJ Distribution";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

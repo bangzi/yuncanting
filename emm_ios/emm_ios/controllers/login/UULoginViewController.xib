@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UULoginViewController">
@@ -27,24 +31,24 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="zXN-Uz-b6u">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="ro5-Vu-Ff7">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-JZ-okN">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wq8-vG-HkJ">
-                            <rect key="frame" x="240" y="80" width="119" height="105"/>
+                            <rect key="frame" x="128" y="80" width="119" height="105"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="105" id="qtl-zk-V2T"/>
                                 <constraint firstAttribute="width" constant="119" id="saG-ag-byr"/>
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOf-oZ-xQN">
-                            <rect key="frame" x="60" y="185" width="480" height="56"/>
+                            <rect key="frame" x="37.5" y="185" width="300" height="56"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-sD-Crp">
                                     <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -64,22 +68,22 @@
                                     </constraints>
                                 </view>
                                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXC-87-9BN">
-                                    <rect key="frame" x="0.0" y="55" width="480" height="1"/>
-                                    <color key="backgroundColor" red="0.85098039215686272" green="0.88235294117647056" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <rect key="frame" x="0.0" y="55" width="300" height="1"/>
+                                    <color key="backgroundColor" red="0.85098039215686272" green="0.88235294117647056" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="lFX-UP-KWn"/>
                                     </constraints>
                                 </view>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入客户标识码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-LV-kIj" customClass="UUTextField">
-                                    <rect key="frame" x="56" y="0.0" width="424" height="56"/>
-                                    <color key="tintColor" red="1" green="0.26471396330000002" blue="0.29444406899999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="textColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="56" y="0.0" width="244" height="56"/>
+                                    <color key="tintColor" red="1" green="0.26471396330000002" blue="0.29444406899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                            <color key="value" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="0.60075431034482762" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="0.60075431034482762" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
@@ -99,7 +103,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OS-hV-OpQ">
-                            <rect key="frame" x="60" y="240" width="480" height="56"/>
+                            <rect key="frame" x="37.5" y="240" width="300" height="56"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkG-gc-kqn">
                                     <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -119,22 +123,22 @@
                                     </constraints>
                                 </view>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7Th-bj-4N5" customClass="UUTextField">
-                                    <rect key="frame" x="56" y="0.0" width="424" height="56"/>
+                                    <rect key="frame" x="56" y="0.0" width="244" height="56"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="56" id="jtl-t6-X9b"/>
                                     </constraints>
-                                    <color key="textColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                            <color key="value" red="0.96078431369999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="0.59574353448275863" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.96078431369999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="0.59574353448275863" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRv-1t-beK">
-                                    <rect key="frame" x="0.0" y="55" width="480" height="1"/>
-                                    <color key="backgroundColor" red="0.85098039215686272" green="0.88235294117647056" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="0.0" y="55" width="300" height="1"/>
+                                    <color key="backgroundColor" red="0.85098039215686272" green="0.88235294117647056" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="jBv-Xp-9kr"/>
                                     </constraints>
@@ -155,7 +159,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXI-MM-pG8">
-                            <rect key="frame" x="60" y="296" width="480" height="56"/>
+                            <rect key="frame" x="37.5" y="296" width="300" height="56"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-2D-oSb">
                                     <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -175,22 +179,22 @@
                                     </constraints>
                                 </view>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="L4o-Vt-C4o" customClass="UUTextField">
-                                    <rect key="frame" x="56" y="0.0" width="424" height="56"/>
+                                    <rect key="frame" x="56" y="0.0" width="244" height="56"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="56" id="miM-ht-uay"/>
                                     </constraints>
-                                    <color key="textColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                            <color key="value" red="0.96078431369999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="0.60447198275862069" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.96078431369999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="0.60447198275862069" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCK-LQ-gQ6">
-                                    <rect key="frame" x="0.0" y="51" width="480" height="1"/>
-                                    <color key="backgroundColor" red="0.85098039215686272" green="0.88235294117647056" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="0.0" y="51" width="300" height="1"/>
+                                    <color key="backgroundColor" red="0.85098039215686272" green="0.88235294117647056" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="yyh-tq-OOx"/>
                                     </constraints>
@@ -211,14 +215,14 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6K-rp-Pt5" customClass="UUButton">
-                            <rect key="frame" x="120" y="369" width="360" height="48"/>
+                            <rect key="frame" x="75" y="369" width="225" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="Nha-6v-2nq"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="登    录">
-                                <color key="titleColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -228,7 +232,7 @@
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                    <color key="value" red="0.96078431369999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="value" red="0.96078431369999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
@@ -236,7 +240,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="LOf-oZ-xQN" firstAttribute="top" secondItem="Wq8-vG-HkJ" secondAttribute="bottom" id="116-RC-RlV"/>
                         <constraint firstItem="oXI-MM-pG8" firstAttribute="top" secondItem="7OS-hV-OpQ" secondAttribute="bottom" id="4f1-fc-b9k"/>
@@ -255,7 +259,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ro5-Vu-Ff7" secondAttribute="bottom" id="1mA-uL-UyZ"/>
                 <constraint firstItem="g9t-JZ-okN" firstAttribute="height" secondItem="zXN-Uz-b6u" secondAttribute="height" id="2Hy-h8-fb2"/>
